@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>验证码练习</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 80px;
+        }
+        #inputCaptcha {
+            height: 36px;
+            font-size: 18px;
+            letter-spacing: 2px;
+            vertical-align: middle;
+        }
+        #captchaImg {
+            height: 36px;
+            vertical-align: middle;
+            cursor: pointer;
+            margin: 0 8px;
+        }
+        #submitBtn {
+            height: 36px;
+            width: 100px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2>输入验证码</h2>
+
+<div>
+    <input type="text" id="inputCaptcha" placeholder="请输入验证码">
+    <img id="captchaImg" src="/captcha/getCaptcha" title="看不清？点击换一张">
+    <input type="button" id="submitBtn" value="提交">
+</div>
+
+<script>
+    // ========== 点击图片换一张 ==========
+    document.getElementById('captchaImg').addEventListener('click', function () {
+        // 加时间戳，让 URL 变化，强制浏览器重新请求
+        this.src = '/captcha/getCaptcha?dt=' + new Date().getTime();
+    });
+
+    // ========== 点击提交校验 ==========
+    document.getElementById('submitBtn').addEventListener('click', function () {
+        const input = document.getElementById('inputCaptcha').value;
+
+        fetch('/captcha/check', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+            body: 'captcha=' + encodeURIComponent(input)
+        })
+            .then(response => response.json())   // 把返回的 JSON 解析成 JS 值
+            .then(result => {
+                if (result) {
+                    location.href = 'success.html';   // 校验通过，跳页
+                } else {
+                    alert('验证码错误或已过期');
+                    // 校验失败，刷新验证码，同时清空输入框
+                    document.getElementById('inputCaptcha').value = '';
+                    document.getElementById('captchaImg')
+                        .src = '/captcha/getCaptcha?dt=' + new Date().getTime();
+                }
+            })
+            .catch(err => alert('请求失败：' + err));
+    });
+</script>
+
+</body>
+</html>
