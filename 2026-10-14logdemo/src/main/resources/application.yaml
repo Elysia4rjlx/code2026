@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: 2026-10-14logdemo
+# application.yml
+#logging:
+#  level:
+#    root: debug
