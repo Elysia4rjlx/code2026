@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: 2026-10-14logdemo
+# application.yml
+logging:
+  level:
+    root: debug
+  file:
+    name: D:\aiShengYi/springboot.log
+  logback:
+    rollingpolicy:
+      max-file-size: 1KB
