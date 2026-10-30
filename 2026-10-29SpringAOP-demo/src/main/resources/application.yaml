@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: 2026-10-29SpringAOP-demo
+server:
+  port: 8081
