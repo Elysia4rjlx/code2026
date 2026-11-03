@@ -1,0 +1,26 @@
+2026-11-03T16:10:30.972+08:00  INFO 19844 --- [2026-11-03blog-system] [main] c.elyjah._0261103blogsystem.Application  : Starting Application using Java 17.0.9 with PID 19844 (D:\code\Java\code2026\2026-11-03blog-system\target\classes started by Elysia1111 in D:\code\Java\code2026\2026-11-03blog-system)
+2026-11-03T16:10:30.975+08:00  INFO 19844 --- [2026-11-03blog-system] [main] c.elyjah._0261103blogsystem.Application  : No active profile set, falling back to 1 default profile: "default"
+2026-11-03T16:10:31.409+08:00  WARN 19844 --- [2026-11-03blog-system] [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.elyjah._0261103blogsystem]' package. Please check your configuration.
+2026-11-03T16:10:31.696+08:00  INFO 19844 --- [2026-11-03blog-system] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-03T16:10:31.707+08:00  INFO 19844 --- [2026-11-03blog-system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-03T16:10:31.708+08:00  INFO 19844 --- [2026-11-03blog-system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-03T16:10:31.741+08:00  INFO 19844 --- [2026-11-03blog-system] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 728 ms
+2026-11-03T16:10:32.317+08:00  INFO 19844 --- [2026-11-03blog-system] [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@6bb2d00b
+2026-11-03T16:10:32.377+08:00  INFO 19844 --- [2026-11-03blog-system] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-11-03T16:10:32.382+08:00  INFO 19844 --- [2026-11-03blog-system] [main] c.elyjah._0261103blogsystem.Application  : Started Application in 1.79 seconds (process running for 2.135)
+2026-11-03T16:12:41.401+08:00  INFO 19844 --- [2026-11-03blog-system] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03T16:12:41.402+08:00  INFO 19844 --- [2026-11-03blog-system] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-03T16:12:41.403+08:00  INFO 19844 --- [2026-11-03blog-system] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-11-03T16:19:47.128+08:00  INFO 19844 --- [2026-11-03blog-system] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-03T16:19:47.626+08:00  INFO 19844 --- [2026-11-03blog-system] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-11-03T18:20:55.368+08:00  INFO 43012 --- [2026-11-03blog-system] [main] c.elyjah._0261103blogsystem.Application  : Starting Application using Java 17.0.9 with PID 43012 (D:\code\Java\code2026\2026-11-03blog-system\target\classes started by Elysia1111 in D:\code\Java\code2026\2026-11-03blog-system)
+2026-11-03T18:20:55.371+08:00  INFO 43012 --- [2026-11-03blog-system] [main] c.elyjah._0261103blogsystem.Application  : No active profile set, falling back to 1 default profile: "default"
+2026-11-03T18:20:56.299+08:00  INFO 43012 --- [2026-11-03blog-system] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-03T18:20:56.316+08:00  INFO 43012 --- [2026-11-03blog-system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-03T18:20:56.316+08:00  INFO 43012 --- [2026-11-03blog-system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-03T18:20:56.373+08:00  INFO 43012 --- [2026-11-03blog-system] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 958 ms
+2026-11-03T18:20:57.365+08:00  INFO 43012 --- [2026-11-03blog-system] [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e61d218
+2026-11-03T18:20:57.426+08:00  INFO 43012 --- [2026-11-03blog-system] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-11-03T18:20:57.430+08:00  INFO 43012 --- [2026-11-03blog-system] [main] c.elyjah._0261103blogsystem.Application  : Started Application in 2.523 seconds (process running for 2.877)
+2026-11-03T18:20:59.077+08:00  INFO 43012 --- [2026-11-03blog-system] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-03T18:20:59.662+08:00  INFO 43012 --- [2026-11-03blog-system] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
