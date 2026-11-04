@@ -22,7 +22,10 @@ public class ResponseAdvice implements ResponseBodyAdvice {
     }
 
     @Override
-    public @Nullable Object beforeBodyWrite(@Nullable Object body, MethodParameter returnType, MediaType selectedContentType, Class selectedConverterType, ServerHttpRequest request, ServerHttpResponse response) {
+    public @Nullable Object beforeBodyWrite(@Nullable Object body, MethodParameter returnType,
+                                            MediaType selectedContentType,
+                                            Class selectedConverterType,
+                                            ServerHttpRequest request, ServerHttpResponse response) {
         if (body instanceof Result<?>){
             return body;
         }

@@ -2,6 +2,9 @@ package com.elyjah._0261103blogsystem.service;
 
 import com.elyjah._0261103blogsystem.domain.BlogInfo;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.elyjah._0261103blogsystem.pojo.response.BlogInfoResponse;
+
+import java.util.List;
 
 /**
 * @author Elysia1111
@@ -10,4 +13,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface BlogInfoService extends IService<BlogInfo> {
 
+    List<BlogInfoResponse> getListByDesc();
+
+    BlogInfoResponse getBlogDetail(Integer blogId);
 }

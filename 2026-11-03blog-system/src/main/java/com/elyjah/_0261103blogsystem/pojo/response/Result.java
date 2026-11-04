@@ -17,6 +17,13 @@ public class Result<T> {
         return result;
     }
 
+    public static <T> Result<T> fail(ResultCodeEnum codeEnum,String errMsg) {
+        Result<T> result = new Result<>();
+        result.setCode(codeEnum.getCode());
+        result.setErrMsg(errMsg);
+        return result;
+    }
+
     public static <T> Result<T> fail(String errMsg) {
         Result<T> result = new Result<>();
         result.setCode(ResultCodeEnum.FAIL.getCode());
